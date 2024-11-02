@@ -15,8 +15,8 @@ const Login = () => {
        
     }
   return (
-    <div className="flex justify-center items-center h-screen w-screen ">
-      <div className="border-2 border-emerald-600 p-20 rounded-xl">
+    <div className="flex items-center justify-center w-screen h-screen ">
+      <div className="p-20 border-2 border-emerald-600 rounded-xl">
         <form 
         onSubmit={(e)=>{
             submitHandler(e);
@@ -29,15 +29,15 @@ const Login = () => {
             setEmail(e.target.value);
           }}
            required 
-           className=' outline-none bg-transparent placeholder:text-gray-400 border-2  border-emerald-600 px-5 py-3 text-xl rounded-full' type="email" placeholder='Enter your Email' />
+           className='px-5 py-3 text-xl bg-transparent border-2 rounded-full outline-none  placeholder:text-gray-400 border-emerald-600' type="email" placeholder='Enter your Email' />
           <input
           value={password}
           onChange={(e)=>{
             setPassword(e.target.value)
           }}
-          required className='  outline-none bg-transparent placeholder:text-gray-400 border-2 border-emerald-600 px-5 py-3 mt-3 text-xl rounded-full' type="password" placeholder='Enter password' />
+          required className='px-5 py-3 mt-3 text-xl bg-transparent border-2 rounded-full outline-none  placeholder:text-gray-400 border-emerald-600' type="password" placeholder='Enter password' />
         
-          <button className='text-white mt5 outline-none bg-transparent placeholder:text-white  bg-emerald-600 px-5 py-3 mt-5 text-xl rounded-full' >Log in</button>
+        <button className='w-full px-8 py-2 text-lg font-semibold text-white border-none rounded-full outline-none mt-7 hover:bg-emerald-700 bg-emerald-600 placeholder:text-white'>Log in</button>
         </form>
       </div>
     </div>
